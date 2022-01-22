@@ -6,6 +6,8 @@ let myData = '';
 let myCart = ''; // will store card details
 let myTotal = 0; // will store total cost
 
+console.log(queryString);
+
 if(queryString != ""){
     //separate querystring parameters
     const urlParams = new URLSearchParams(queryString);
@@ -34,7 +36,6 @@ if(queryString != ""){
             key = key.split("_").join(" ");
 
             myData += `<p>${key}: ${value}</p>`;
-            //console.log(value, key);
         }
     });
 

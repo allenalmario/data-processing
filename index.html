@@ -62,8 +62,12 @@
                 <input type="text" name="Address" id="Address" placeholder="Address" required="required" />
             </div>
             <div>
+                <label for="City">City</label>: <br />
+                <input type="text" name="City" id="City" placeholder="City" required="required" />
+            </div>
+            <div>
                 <label for="State">State</label>: <br />
-                <select name="State" id="State">
+                <select name="State" id="State" required="required">
                     <option value="">Please select state</option>
                     <option value="AK">Alaska</option>
                     <option value="CA">Calfornia</option>
@@ -72,24 +76,12 @@
                 </select>
             </div>
             <div>
-                <fieldset>
-                    <legend>Would you like to join our mailing list?</legend>
-                    <label><input type="radio" name="Join_Mailing_List" value="Yes" required="required"/> Yes</label><br />
-                    <label><input type="radio" name="Join_Mailing_List" value="No" /> No</label>
-                </fieldset>
+                <label for="postalCode">Postal Code</label>: <br />
+                <input type="text" name="postalCode" id="postalCode" placeholder="Postal Code" required="required" />
             </div>
             <div>
-                <fieldset>
-                    <legend>Interested In?</legend>
-                    <label><input type="checkbox" name="Interested_In" value="Website" /> Website</label><br />
-                    <label><input type="checkbox" name="Interested_In" value="OnlineCalendar" /> Online Calendar</label><br />
-                    <label><input type="checkbox" name="Interested_In" value="ContactForm" /> Contact Form</label><br />
-                    <label><input type="checkbox" name="Interested_In" value="Lollipops" /> Complimentary Lollipops</label>
-                </fieldset>
-            </div>
-            <div>
-                <label for="Comments">Comments</label>: <br />
-                <textarea name="Comments" cols="36" rows="4" id="Comments"></textarea>
+                <label for="Note">Note</label>: <br />
+                <textarea name="Note" cols="36" rows="4" id="Note"></textarea>
             </div>
             <div>
                 <input type="submit" value="Submit "/>
